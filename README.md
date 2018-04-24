@@ -72,4 +72,4 @@ y el cliente Docker está configurado para buscar imágenes en Docker Hub de man
 ### Arquitectura Docker
 
 ![Arquitectura Docker](https://docs.docker.com/engine/images/architecture.svg)
-
+(Imagen obtenida de https://docs.docker.com/engine/images/architecture.svg)
