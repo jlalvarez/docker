@@ -3,9 +3,26 @@
 
 ## Introducción
 
-Docker es una plataforma para la gestión y ejecución de aplicaciones (empaquetadas como imágenes) 
-en contenedores software. Los contenedores surgen como una alternativa, más ligera,
-a las máquinas virtuales.
+Docker es una plataforma para desarrolladores y administradores de sistemas para 
+desarrollar, implementar y ejecutar aplicaciones en contenedores, denominadas 
+aplicaciones contenerizadas. Las ventajas de la contenerización son:
+
+Flexible: las aplicaciones más complejas pueden contenerizarse.
+Ligero: los contenedores aprovechan y comparten el kernel de host.
+Intercambiable: se pueden realizar actualizaciones y mejoras sobre la marcha.
+Portátil: se pueden construir localmente o en la nube y ejecutarse en cualquier lugar.
+Escalable: se puede aumentar o disminuir automáticamente réplicas de un contenedor.
+Apilable: Se pueden apilar servicios verticalmente y sobre la marcha.
+
+Un contenedor se ejecuta nativamente en Linux y comparte el kernel de la máquina host con otros contenedores. 
+Por el contrario, una máquina virtual ejecuta un sistema operativo completo cuyo acceso a los recursos de host 
+se realiza mediante un hipervisor. En general, las máquinas virtuales proporcionan un entorno 
+con más recursos de los que la mayoría de las aplicaciones necesitan. En la siguiente imagen se muestran
+las diferencias entre ambas tecnologías:
+
+![Contenedores](https://www.docker.com/sites/default/files/Container%402x.png)
+![Máquinas Virtuales](https://www.docker.com/sites/default/files/VM%402x.png)
+
 
 En la actualidad, existen dos ediciones de Docker: Community Edition (CE) and Enterprise Edition (EE).
 Docker CE es ideal para iniciarse en el mundo de los contenedores y experimentar con aplicaciones basadas en contenedores.
