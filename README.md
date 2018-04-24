@@ -11,7 +11,7 @@ En la actualidad, existen dos ediciones de Docker: Community Edition (CE) and En
 Docker CE es ideal para iniciarse en el mundo de los contenedores y experimentar con aplicaciones basadas en contenedores.
 Docker EE está pensada para el despliegue en producción de aplicaciones empresariales.
 Puede obtener más información, así como los detalles de instalación para diferentes plataformas, 
-de ambas ediciones, en [la documentación de Docker](https://docs.docker.com/install).
+de ambas ediciones, en [la documentación de Docker](https://docs.docker.com/install){:target="_blank"}.
 
 ## Conceptos Básicos
 
