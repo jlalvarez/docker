@@ -3,7 +3,7 @@
 
 ## Introducción
 
-Docker es una plataforma para la gestión y ejecución de aplicaciones (imágenes) 
+Docker es una plataforma para la gestión y ejecución de aplicaciones (empaquetadas como imágenes) 
 en contenedores software. Los contenedores surgen como una alternativa, más ligera,
 a las máquinas virtuales.
 
@@ -50,16 +50,38 @@ Un contenedor es una instancia ejecutable de una imagen. Puede crear, iniciar, d
 un contenedor utilizando la API Docker o la CLI. Puede conectar un contenedor a una o más redes, adjuntarle 
 almacenamiento o incluso crear una nueva imagen en función de su estado actual.
 
-Por defecto, un contenedor está aislado de otros contenedores y de la máquina host.
-Cuando se elimina un contenedor, la imagen no se ve alterada, y sólo perduran los datos
+Cuando se elimina un contenedor, la imagen no se ve alterada y sólo perduran los datos
 guardado en un almacenamiento persistente.
+
+Por defecto, un contenedor está aislado de otros contenedores y de la máquina host.
+Los contenedores pueden estar conectados mediante redes y crear almacenamiento persistente mediante volúmenes.
 
 
 ### Servicios
 
-Un servicio permite hacer público un contenedor; así como escalado, estableciendo
-el número de réplicas deseadas, y proporciona balaceo de carga. Esto es adecuado cuando 
+Un servicio permite publicar en Internet una aplicación contenerizada; así como su escalado, estableciendo
+el número de réplicas deseadas, y proporcionando balaceo de carga. Esto es adecuado cuando 
 los contenedores se ejecutan en varias máquinas formando un cluster (swarm).
+
+Cuando un servicio es ofrecido por más de un contenedor; por ejemplo, una aplicación web con una base de datos,
+es más adecuado crear grupos de contenedores. Para ello, Docker incluye la herramienta docker-compose que,
+utilizando archivos de configuración declarativos, permite crear un ecosistema docker (redes, 
+volúmenes de almacenamiento, contenedores, etc.)
+
+### Orquestación de contenedores
+
+La orquestación de contenedores hace referencia a la posibilidad de planificar y administrar contenedores
+de forma automática. Este concepto se hace fundamental cuando una aplicación está organizada en varios 
+contenedores; por ejemplo, si ha sido desarrollada bajo una arquitectura de microservicios o, 
+en aplicaciones más monolíticas, donde es necesario un servidor web, un sistema gestor de base 
+de datos e, incluso, algunos otros servicios.
+
+El sistema de orquestación velará tanto los contenedores, como el número de réplicas de estos
+y el resto de elementos estén en el estado deseado en cada momento, actuando en consecuencia si fuese necesario.
+
+Los sistemas de orquestación más utilizados son: Kubernetes, Swarm, Apache Mesos.
+
+
 
 
 ### Registros
