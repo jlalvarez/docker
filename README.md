@@ -20,6 +20,8 @@ se realiza mediante un hipervisor. En general, las máquinas virtuales proporcio
 con más recursos de los que la mayoría de las aplicaciones necesitan. En la siguiente imagen se muestran
 las diferencias entre ambas tecnologías:
 
+<img src="https://www.docker.com/sites/default/files/Container%402x.png" alt="Drawing" style="width: 200px;"/>
+
 ![Contenedores](https://www.docker.com/sites/default/files/Container%402x.png)
 ![Máquinas Virtuales](https://www.docker.com/sites/default/files/VM%402x.png)
 
