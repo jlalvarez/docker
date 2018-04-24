@@ -13,7 +13,7 @@ Docker EE está pensada para el despliegue en producción de aplicaciones empres
 Puede obtener más información, así como los detalles de instalación para diferentes plataformas, 
 de ambas ediciones, en [la documentación de Docker](https://docs.docker.com/install).
 
-## Concepttos Básicos
+## Conceptos Básicos
 
 Docker permite empaquetar y ejecutar aplicaciones en un entorno aislado llamado contenedor.
 Los contenedores son más ligeros que las máquinas virtuales porque no necesitan la carga adicional de un hipervisor.
@@ -73,20 +73,4 @@ y el cliente Docker está configurado para buscar imágenes en Docker Hub de man
 ### Arquitectura Docker
 
 ![Arquitectura Docker](https://docs.docker.com/engine/images/architecture.svg)
-
-
-
-
-
-
-
-
-Desarrolle su aplicación y sus componentes de soporte usando contenedores.
-El contenedor se convierte en la unidad para distribuir y probar su aplicación.
-Cuando esté listo, implemente su aplicación en su entorno de producción, 
-como un contenedor o un servicio orquestado. Esto funciona igual si su entorno de producción 
-es un centro de datos local, un proveedor de la nube o un híbrido de los dos.
-
-
-
 
