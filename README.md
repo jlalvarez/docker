@@ -27,7 +27,7 @@ El motor de Docker (Docker Engine) es una aplicación con tres componentes princ
 
 - Un servidor (demonio) (dockerd).
 - Una API REST para comunicación con el demonio.
--Un cliente de línea de comandos (CLI) (docker) que usa el API para comunicarse con el demonio.
+- Un cliente de línea de comandos (CLI) (docker) que usa el API para comunicarse con el demonio.
 
 ### Imágenes
 
