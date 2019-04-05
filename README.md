@@ -21,7 +21,8 @@ con más recursos de los que la mayoría de las aplicaciones necesitan. En la si
 las diferencias entre ambas tecnologías:
 
 <img src="https://www.docker.com/sites/default/files/d8/2018-11/docker-containerized-appliction-blue-border_2.png" alt="Contenedores" width="45%" height="45%"/> <img src="https://www.docker.com/sites/default/files/d8/2018-11/container-vm-whatcontainer_2.png" alt="Máquinas Virtuales" width="45%" height="45%"/>
-(Imágenes obtenidas deede https://www.docker.com)
+
+(Imágenes obtenidas desde https://www.docker.com)
 
 En la actualidad, existen dos ediciones de Docker: Community Edition (CE) and Enterprise Edition (EE).
 Docker CE es ideal para iniciarse en el mundo de los contenedores y experimentar con aplicaciones basadas en contenedores.
