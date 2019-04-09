@@ -4,11 +4,11 @@
 ## Introducción
 
 Docker es una plataforma para desarrolladores y administradores de sistemas para 
-desarrollar, implementar y ejecutar aplicaciones en contenedores, denominadas 
+implementar y ejecutar aplicaciones en contenedores, denominadas 
 aplicaciones contenerizadas. Las ventajas de la contenerización son:
 
 Flexible: las aplicaciones más complejas pueden contenerizarse.
-Ligero: los contenedores aprovechan y comparten el kernel de host.
+Ligera: los contenedores aprovechan y comparten el kernel de host.
 Intercambiable: se pueden realizar actualizaciones y mejoras sobre la marcha.
 Portátil: se pueden construir localmente o en la nube y ejecutarse en cualquier lugar.
 Escalable: se puede aumentar o disminuir automáticamente réplicas de un contenedor.
@@ -20,8 +20,8 @@ se realiza mediante un hipervisor. En general, las máquinas virtuales proporcio
 con más recursos de los que la mayoría de las aplicaciones necesitan. En la siguiente imagen se muestran
 las diferencias entre ambas tecnologías:
 
-<img src="https://www.docker.com/sites/default/files/d8/2018-11/docker-containerized-appliction-blue-border_2.png" alt="Contenedores" width="45%" height="45%"/> <img src="https://www.docker.com/sites/default/files/d8/2018-11/container-vm-whatcontainer_2.png" alt="Máquinas Virtuales" width="45%" height="45%"/>
-
+<img src="https://www.docker.com/sites/default/files/d8/2018-11/docker-containerized-appliction-blue-border_2.png" alt="Contenedores" width="45%" height="45%"/>
+<img src="https://www.docker.com/sites/default/files/d8/2018-11/container-vm-whatcontainer_2.png" alt="Máquinas Virtuales" width="45%" height="45%"/>
 (Imágenes obtenidas desde https://www.docker.com)
 
 En la actualidad, existen dos ediciones de Docker: Community Edition (CE) and Enterprise Edition (EE).
@@ -100,8 +100,7 @@ Los sistemas de orquestación más utilizados son: Kubernetes, Swarm, Apache Mes
 
 
 
-
-### Registros
+### Registros 
 
 Un registro en Docker almacena imágenes públicas o privadas. 
 Por ejemplo, Docker Hub y Docker Cloud son registros públicos, 
