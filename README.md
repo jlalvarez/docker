@@ -20,8 +20,7 @@ se realiza mediante un hipervisor. En general, las máquinas virtuales proporcio
 con más recursos de los que la mayoría de las aplicaciones necesitan. En la siguiente imagen se muestran
 las diferencias entre ambas tecnologías:
 
-<img src="https://www.docker.com/sites/default/files/d8/2018-11/docker-containerized-appliction-blue-border_2.png" alt="Contenedores" width="45%" height="45%"/>
-<img src="https://www.docker.com/sites/default/files/d8/2018-11/container-vm-whatcontainer_2.png" alt="Máquinas Virtuales" width="45%" height="45%"/>
+<img src="https://www.docker.com/sites/default/files/d8/2018-11/docker-containerized-appliction-blue-border_2.png" alt="Contenedores" width="45%" height="45%"/> <img src="https://www.docker.com/sites/default/files/d8/2018-11/container-vm-whatcontainer_2.png" alt="Máquinas Virtuales" width="45%" height="45%"/>
 (Imágenes obtenidas desde https://www.docker.com)
 
 En la actualidad, existen dos ediciones de Docker: Community Edition (CE) and Enterprise Edition (EE).
