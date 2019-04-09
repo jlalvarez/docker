@@ -110,5 +110,8 @@ y el cliente Docker está configurado para buscar imágenes en Docker Hub de man
 
 ### Arquitectura Docker
 
+La figura siguiente muestra la arquitectura docker. El host contendrá las imágenes, creadas directamente o desde un registro,
+y los contenedores, utilizando el docker CLI.
+
 ![Arquitectura Docker](https://docs.docker.com/engine/images/architecture.svg)
 (Imagen obtenida de https://docs.docker.com/engine/images/architecture.svg)
