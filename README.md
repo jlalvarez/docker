@@ -21,6 +21,7 @@ con más recursos de los que la mayoría de las aplicaciones necesitan. En la si
 las diferencias entre ambas tecnologías:
 
 <img src="https://www.docker.com/sites/default/files/d8/2018-11/docker-containerized-appliction-blue-border_2.png" alt="Contenedores" width="45%" height="45%"/> <img src="https://www.docker.com/sites/default/files/d8/2018-11/container-vm-whatcontainer_2.png" alt="Máquinas Virtuales" width="45%" height="45%"/>
+
 (Imágenes obtenidas desde https://www.docker.com)
 
 En la actualidad, existen dos ediciones de Docker: Community Edition (CE) and Enterprise Edition (EE).
@@ -47,7 +48,7 @@ El motor de Docker (Docker Engine) es una aplicación con tres componentes princ
 
 ### Imágenes
 
-Una imagen es una plantilla, de solo lectura (estática), para crear contenedores Docker.
+Una imagen es una plantilla, de solo lectura (estática), para crear contenedores.
 A menudo, una imagen se basa en otra imagen, con alguna personalización adicional, 
 que se añade como una nueva capa. Para ello, se utiliza el sistema de ficheros
 UnionFS, donde cada elemento añadido es creado como una nueva capa.
@@ -59,18 +60,19 @@ en un registro. Puede crear sus propias imágenes a partir de otros contenedores
 archivo Dockerfile con las instrucciones para crear la imagen. Cada instrucción crea una capa en la imagen.
 Si cambia el archivo Dockerfile y se reconstruye la imagen, solo cambian las capas que han sido modificadas.
 
+Puede gestionar las imágenes utilizando la API Docker o el docker CLI.
 
 ### Contenedores
 
 Un contenedor es una instancia ejecutable de una imagen. Puede crear, iniciar, detener, mover o eliminar
-un contenedor utilizando la API Docker o la CLI. Puede conectar un contenedor a una o más redes, adjuntarle 
+un contenedor utilizando la API Docker o el docker CLI. Puede conectar un contenedor a una o más redes, adjuntarle 
 almacenamiento o incluso crear una nueva imagen en función de su estado actual.
 
 Cuando se elimina un contenedor, la imagen no se ve alterada y sólo perduran los datos
 guardado en un almacenamiento persistente.
 
 Por defecto, un contenedor está aislado de otros contenedores y de la máquina host.
-Los contenedores pueden estar conectados mediante redes y crear almacenamiento persistente mediante volúmenes.
+Los contenedores pueden conectarse (link) mediante redes y utilizar volúmenes del host para almacenamiento persistente.
 
 
 ### Servicios
@@ -92,10 +94,10 @@ contenedores; por ejemplo, si ha sido desarrollada bajo una arquitectura de micr
 en aplicaciones más monolíticas, donde es necesario un servidor web, un sistema gestor de base 
 de datos e, incluso, algunos otros servicios.
 
-El sistema de orquestación velará tanto los contenedores, como el número de réplicas de estos
-y el resto de elementos estén en el estado deseado en cada momento, actuando en consecuencia si fuese necesario.
+El sistema de orquestación velará tanto por los contenedores como por el número de réplicas de éstos
+y para que el resto de elementos estén en el estado deseado en cada momento, actuando en consecuencia si fuese necesario.
 
-Los sistemas de orquestación más utilizados son: Kubernetes, Swarm, Apache Mesos.
+Los sistemas de orquestación más utilizados son: Kubernetes, Swarm, Apache Mesos. 
 
 
 
